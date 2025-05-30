@@ -8,7 +8,50 @@
 </head>
 <body>
     <div class="form_container">
-        
+        <form>
+            <!-- form firstname detail -->
+            <div class="form_row">
+                <div class="form_details">
+                <label for="firstname">First Name  <span class="required">*</span></label>
+                <input type="text">
+            </div>
+            <!-- form lastname detail -->
+            <div class="form_details">
+                <label for="lastname">Last Name <span class="required">*</span></label>
+                <input type="text">
+            </div>
+            </div>
+            <!-- form email details -->
+            <div class="form_details">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="text">
+            </div>
+            <!-- form checkbox details -->
+            <div class="form_details">
+                <label>Query Type <span class="required">*</span></label>
+                <div class="checkbox_buttons">
+                    <label class="checkbox_btn">
+                        <input type="radio" name="queryType" value="General Enquiry"> General Enquiry
+                    </label>
+                    <label class="checkbox_btn">
+                        <input type="radio" name="queryType" value="Support Requuest">
+                        Support Request
+                    </label>
+                </div>
+            </div>
+
+            <div class="form_details">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea name="message" id="message" rows="5"></textarea>
+            </div>
+
+            <div class="form_details">
+               <label for="">
+                <input type="checkbox" name="consent" required>
+                I consent to being contacted by the team <span class="required">*</span>
+               </label> 
+            </div>
+        </form>
     </div>
 </body>
 </html>
