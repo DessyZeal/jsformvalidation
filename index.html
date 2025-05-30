@@ -9,6 +9,7 @@
 <body>
     <div class="form_container">
         <form>
+            <h2>Contact Us</h2>
             <!-- form firstname detail -->
             <div class="form_row">
                 <div class="form_details">
@@ -29,10 +30,11 @@
             <!-- form checkbox details -->
             <div class="form_details">
                 <label>Query Type <span class="required">*</span></label>
-                <div class="checkbox_buttons">
+                <div class="checkbox_buttons form_row">
                     <label class="checkbox_btn">
                         <input type="radio" name="queryType" value="General Enquiry"> General Enquiry
                     </label>
+
                     <label class="checkbox_btn">
                         <input type="radio" name="queryType" value="Support Requuest">
                         Support Request
@@ -50,6 +52,10 @@
                 <input type="checkbox" name="consent" required>
                 I consent to being contacted by the team <span class="required">*</span>
                </label> 
+            </div>
+
+            <div class="btn form_details">
+                <button>submit</button>
             </div>
         </form>
     </div>
