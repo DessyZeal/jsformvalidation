@@ -8,24 +8,27 @@
 </head>
 <body>
     <div class="form_container">
-        <form>
+        <form id="contactForm">
             <h2>Contact Us</h2>
             <!-- form firstname detail -->
             <div class="form_row">
                 <div class="form_details">
                 <label for="firstname">First Name  <span class="required">*</span></label>
-                <input type="text">
+                <input type="text" id="firstName">
+                <span class="error" id="firstNameError"></span>
             </div>
             <!-- form lastname detail -->
             <div class="form_details">
                 <label for="lastname">Last Name <span class="required">*</span></label>
-                <input type="text">
+                <input type="text" id="lastName">
+                <span class="error" id="lastNameError"></span>
             </div>
             </div>
             <!-- form email details -->
             <div class="form_details">
                 <label for="email">Email Address <span class="required">*</span></label>
-                <input type="text">
+                <input type="text" id="email">
+                <span class="error" id="emailError"></span>
             </div>
             <!-- form checkbox details -->
             <div class="form_details">
@@ -40,6 +43,7 @@
                         Support Request
                     </label>
                 </div>
+                <span class="error" id="queryError"></span>
             </div>
 
             <div class="form_details">
@@ -55,7 +59,7 @@
             </div>
 
             <div class="btn form_details">
-                <button>submit</button>
+                <button type="submit">submit</button>
             </div>
         </form>
     </div>

@@ -95,6 +95,16 @@ textarea:focus {
 input[type="checkbox"]:checked {
     accent-color: var(--Green-600-medium);
 }
+input.error-border,
+textarea.error-border {
+    border-color: var(--Red);
+}
+span.error {
+    color: var(--Red);
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+}
 .required {
     color: var(--Green-600-medium);
     font-weight: bold;
