@@ -91,6 +91,7 @@ textarea:focus {
     text-transform: capitalize;
     border: none;
     border-radius: 9px;
+    cursor: pointer;
 }
 input[type="checkbox"]:checked {
     accent-color: var(--Green-600-medium);

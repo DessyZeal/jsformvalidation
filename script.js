@@ -32,4 +32,32 @@ inputs.forEach(input => {
     }
 });
 
+// radio button (query type) check
+const queryTypeChecked =
+document.querySelector("input[name='queryType']:checked");
+const queryError =
+document.getElementById("queryError");
+if (!queryTypeChecked) {
+    queryError.textContent = "Please select a query type";
+    valid = false;
+} else {
+    queryError.textContent = "";
+}
 
+// consent checkbox check
+const consentCheckbox = 
+document.getElementById("consent");
+const consentError =
+document.getElementById("consentError");
+if (!consentCheckbox.checked) {
+    consentError.textContent = "To submit this form, please consent to being conacted";
+    valid = false;
+} else {
+    consentError.textContent = "";
+}
+// if valid, simulate submission
+if (valid) {
+    alert("Form submitted sucessfuly");
+    this.reset();
+}
+});
